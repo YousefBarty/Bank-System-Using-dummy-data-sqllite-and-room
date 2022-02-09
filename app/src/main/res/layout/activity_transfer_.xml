@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Transfer_Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/devonshire"
+        android:text="Banking operations"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="50dp"
+        android:textStyle="bold"></TextView>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:lottie_rawRes="@raw/sender"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+    <EditText
+        android:gravity="center"
+        android:id="@+id/money_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Add balance to transfer"
+        android:padding="12dp"
+        android:maxLines="1"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:textColor="#E9E9E9"
+        android:textColorHint="#B8B8B8"
+        android:textSize="20sp"></EditText>
+    <Spinner
+        android:padding="12dp"
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/transfer_btn"
+        android:padding="12dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Send">
+
+    </Button>
+
+
+</LinearLayout>
